@@ -1,0 +1,85 @@
+/* Media Query for Small Devices */
+@media only screen and (max-width: 600px) {
+    .add-book-form {
+        width: 90%; /* Make the form take up most of the screen on small devices */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Body Style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Optional: Light gray background for the page */
+}
+
+/* Style for the Add Book page container with a background image */
+.add-book-container {
+    background-image: url('images/ui-design.png.jpg'); /* Update the path to your image */
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Keep the background fixed when scrolling */
+    min-height: 100vh; /* Ensure the background covers the full height of the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the Add Book form container */
+.add-book-form {
+    /* Center the form horizontally */
+    margin: 5;
+    /* Set a fixed width for the form */
+    width: 300px;
+    /* Add padding for better readability */
+    padding: 40px;
+    /* Add a background color if you want */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Add a border and rounded corners */
+    border: px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Style for form fields */
+.add-book-form input[type="text"],
+.add-book-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Style for buttons */
+.add-book-form button {
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.add-book-form button:hover {
+    background-color: #45a049; /* Slightly darker green when hovered */
+}
+
+/* Style for the heading */
+.add-book-form h2 {
+    text-align: center;
+    color: #333;
+}

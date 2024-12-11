@@ -1,0 +1,72 @@
+/* General Body Style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the Edit Book page container with a background image */
+.edit-book-container {
+    background-image: url('images/555.jpg'); /* Path to your background image */
+    background-size: cover; /* Make sure the background image covers the entire screen */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Fix the background image while scrolling */
+    min-height: 100vh; /* Ensure the background covers the entire height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the content vertically and horizontally */
+}
+
+/* Style for the Edit Book form container */
+.edit-book-form {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for the form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* Style for the logo image inside the form (if you have one) */
+.form-logo {
+    width: 100px; /* Set the size of the logo */
+    margin-bottom: 20px; /* Space below the logo */
+}
+
+/* Style for form fields */
+.edit-book-form input[type="text"],
+.edit-book-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Style for the submit button */
+.edit-book-form button {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.edit-book-form button:hover {
+    background-color: #45a049; /* Darker green when hovered */
+}
+
+/* Style for the heading */
+.edit-book-form h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Media Query for Small Devices */
+@media only screen and (max-width: 600px) {
+    .edit-book-form {
+        width: 90%; /* Make the form take up more space on smaller devices */
+    }
+}
